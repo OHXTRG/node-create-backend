@@ -1,0 +1,25 @@
+{
+  "name": "create-backend",
+  "version": "1.0.0",
+  "description": "Scafold the node backend app ",
+  "main": "generator.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node generator.js",
+    "dev" : "nodemon generator.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OHXTRG/node-create-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OHXTRG/node-create-backend/issues"
+  },
+  "homepage": "https://github.com/OHXTRG/node-create-backend#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
