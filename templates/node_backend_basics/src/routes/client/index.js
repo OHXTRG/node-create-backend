@@ -1,5 +1,6 @@
 import express from 'express';
-
+import authRotues from "./auth.routes.js"
+import authenticate from '../../middlewares/clientAuthMiddleware.js';
 
 const router = express.Router();
 
@@ -17,6 +18,9 @@ router.get("/health-check", (req , res )=>{
  * 
  */
 
+router.use("/",authRotues);
+
+// router.use("/" , ...authenticate() , )
 
 
 

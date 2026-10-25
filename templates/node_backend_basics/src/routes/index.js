@@ -1,5 +1,4 @@
 import express from 'express';
-import authenticate from '../middlewares/clientAuthMiddleware.js';
 import clientRoutes from './client/index.js'
 
 const router = express.Router();
@@ -18,7 +17,7 @@ router.use(clientAppRoute);
 router.use(adminAppRoute);
 */
 
-router.use("/client", ...authenticate(), clientRoutes);
+router.use("/client",  clientRoutes);
 
 
 export default router;

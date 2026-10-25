@@ -1,1 +1,5 @@
-/// import all controller here and export them 
+/// re exporting all the controller 
+
+export {
+    register 
+} from "./client/auth.controller.js"
